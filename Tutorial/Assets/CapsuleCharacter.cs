@@ -27,7 +27,7 @@ public class CapsuleCharacter : MonoBehaviour {
         {
             gameObject.GetComponent<Rigidbody>().transform.Translate(-0.25f, 0, 0);
         }
-        if (Input.GetKey(KeyCode.N))
+        if (Input.GetKey(KeyCode.Return))
         {
             gameObject.GetComponent<Rigidbody>().transform.Translate(0, 0.25f, 0);
         }
