@@ -13,27 +13,8 @@ public class CapsuleCharacter : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            {
-                gameObject.GetComponent<Rigidbody>().transform.Translate(0, 0, 0.25f);
-            }
             gameObject.GetComponent<Rigidbody>().transform.Translate(0, 0, 0.25f);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            gameObject.GetComponent<Rigidbody>().transform.Translate(0, 0, -0.25f);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            gameObject.GetComponent<Rigidbody>().transform.Translate(0.25f, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            gameObject.GetComponent<Rigidbody>().transform.Translate(-0.25f, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.KeypadEnter) || Input.GetKey(KeyCode.N))
-        {
-            gameObject.GetComponent<Rigidbody>().transform.Translate(0, 0.25f, 0);
-        }
+
     }
 }
